@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    background: none;
+    outline: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    list-style-type: none;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  @font-face {
+    font-family: Karla;
+    src: url(../src/stylesheets/fonts/karla/Karla-VariableFont_wght.ttf);
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+   
   }
-  to {
-    transform: rotate(360deg);
+
+  @font-face {
+
+
+    font-family: Markazi;
+    src: url(../src//stylesheets//fonts/markazi/MarkaziText-VariableFont_wght.ttf);
   }
+
+  :root {
+    --MainGreen:#495E57;
+    --MainYellow:#F4CE14;
+
+    --SubSalmon:#EE9972;
+    --SubSkin:#FBDABB;
+    --SubLight:#EDEFEE;
+    --SubDark:#333333;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .app{
+    font-family: Karla;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .mainCont{
+    min-height: 100%;
+    width: 100%;
+}
+
+.yellowButton{
+  background-color: var(--MainYellow);
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 10px;
+  transition: all 100ms ease-in-out;
+  color: black;
+}
+
+.yellowButton:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  filter: brightness(1.05);
+
+}
+
+h1,h2,h3,h4,h5{
+  font-family: Markazi;
 }

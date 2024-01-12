@@ -1,0 +1,55 @@
+header{
+    background-color: var(--subLight);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    gap: 40px;
+    font-size: 1em;
+   
+}
+
+.headerLogoCont{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headerLogoCont>img{
+     width: 200px;
+    transition: all 100ms ease-in-out;
+}
+.headerLogoCont>img:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+   }
+
+.headerNav{
+    width:60%
+}
+
+.navList{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.navList>li{
+    transition: all 100ms ease-in-out;
+}
+
+.navList>li>a{
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
+   
+}
+
+.navList>li:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
