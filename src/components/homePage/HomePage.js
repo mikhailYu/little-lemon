@@ -3,10 +3,13 @@ import SpecialPanel from "./SpecialPanel";
 import { specialsList, testimonyList } from "./infoLists";
 import "../../stylesheets/homePage.css";
 import TestimonyPanel from "./TestimonialPanel";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage(props) {
   const [specials, setSpecials] = useState("");
   const [testimonies, setTestimonies] = useState("");
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     getSpecials();
@@ -45,7 +48,7 @@ export default function HomePage(props) {
             type="button"
             className="heroButton yellowButton"
             onClick={() => {
-              // go to booking page
+              navigate("/booking");
             }}
           >
             Reserve a Table

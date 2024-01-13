@@ -25,7 +25,7 @@ export default function Footer(props) {
             <a href="/reservations">Reservations</a>
           </li>
           <li>
-            <a href="/order-online">Order Online</a>
+            <a href="/booking">Order Online</a>
           </li>
           <li>
             <a href="/login">Login</a>
