@@ -86,7 +86,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: 100%;
     padding-top: 100px;
     gap: 50px;
     padding-bottom: 100px;
@@ -97,13 +97,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    
+    max-width: 700px;
+    min-width: 400px;
+    gap: 100px;
 }
 
 .hlHeaderComp>h2{
     font-weight: bold;
     font-size: 3em;
     color: black;
+    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .hlPanelsComp{
@@ -318,4 +323,352 @@
 
 .aboutImgUpper{
     z-index: 2;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+
+/* hero section */
+
+#heroSection{
+    width: 100%;
+    background-color: var(--MainGreen);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    height: 400px;
+    min-height: 400px;
+
+}
+
+.heroLeft{
+  width: 100%;
+    height: 100%;
+    max-height: 0%;
+    transform: translateY(70px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+ 
+}
+
+.heroHeaderCont{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+
+}
+
+.heroHeaderCont>h1{
+    font-weight: bold;
+    color: var(--MainYellow);
+    font-size:3em;
+text-align: center;
+
+}
+
+.heroHeaderCont>h2{
+    color: white;
+    font-size: 2em;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.heroText{
+    font-weight: bold;
+    font-size: 1em;
+    padding-right: 0%;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.heroImgCont{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    transform: translateY(200px);
+}
+
+.heroImgCont>img{
+    width: 300px;
+    transform: translateY(-150px);
+}
+
+
+
+
+
+/* highlights */
+#highlightsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding-top: 100px;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.hlHeaderComp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+     padding-top: 100px;
+    max-width: 700px;
+    min-width: 0px;
+    gap: 0px;
+}
+
+.hlHeaderComp>h2{
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    color: black;
+    padding-bottom: 30px;
+
+}
+
+.hlPanelsComp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.specialPanel{
+    width: 250px;
+
+    background-color: var(--SubLight);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 500px;
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.308));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.specialImgCont{
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+  
+}
+
+.specialImgCont>img{
+    height: 200px;
+}
+
+.specialHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1em;
+    height: 50px;
+}
+
+.specialHeader>h2{
+    font-weight: bold;
+    color: black;
+    font-size: 1.3em;
+}
+
+.specialHeader>p{
+    color: var(--SubSalmon);
+}
+
+.specialDesc{
+    height: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.specialBottomCont{
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.specialBottomCont>p{
+    transition: all 50ms ease-in-out;
+    color: black;
+}
+
+.specialBottomCont>p:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    color: rgb(54, 54, 54);
+    text-decoration: underline;
+
+}
+
+
+/* testimonials */
+
+#testimonialsSection{
+    background-color: var(--MainGreen);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+
+}
+
+#testimonialsSection>h2{
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--MainYellow);
+}
+
+.testiPanels{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.308));
+}
+
+.testiPanel{
+    background-color: var(--SubLight);
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 20px;
+}
+
+.rating{
+    background-color: black;
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+}
+
+.testiMid{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.testiMid>p{
+    font-weight: bold;
+}
+
+.testiImgCont{
+    width: 100px;
+    height: 100px;
+
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+.testiImgCont>img{
+   width: 100px;
+}
+
+
+/* about */
+
+#aboutSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.aboutLeftCont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+
+
+}
+
+.aboutHeaders{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.aboutHeaders>h2{
+    font-weight: bold;
+    font-size: 3em;
+    color: var(--MainYellow);
+}
+
+.aboutHeaders>h3{
+    font-size: 2em;
+}
+
+.aboutRightCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.aboutRightCont>img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.aboutImgUnder{
+    transform: translateX(0px) translateY(0px);
+}
+
+.aboutImgUpper{
+    z-index: 2;
+}
+
+
 }

@@ -53,3 +53,69 @@ header{
   transform: scale(1.03);
 }
 
+
+
+@media only screen and (max-width: 900px){
+    header{
+        background-color: var(--subLight);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        gap: 10px;
+        font-size: 1em;
+
+    }
+    
+    .headerLogoCont{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    
+    .headerLogoCont>img{
+         width: 200px;
+        transition: all 100ms ease-in-out;
+    }
+    .headerLogoCont>img:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+       }
+    
+    .headerNav{
+        width:100%
+    }
+    
+    .navList{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        font-size: 0.8em;
+
+    
+    }
+    
+    .navList>li{
+        transition: all 100ms ease-in-out;
+    }
+    
+    .navList>li>a{
+        font-size: 1em;
+        color: black;
+        font-weight: bold;
+       
+    }
+    
+    .navList>li:hover{
+      cursor: pointer;
+      transform: scale(1.03);
+    }
+    
+
+    
+}

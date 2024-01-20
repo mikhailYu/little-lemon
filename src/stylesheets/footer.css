@@ -60,4 +60,70 @@ footer{
     margin-bottom: 10px;
   }
 
-  
+  @media only screen and (max-width: 900px){
+
+    footer{
+      background-color: var(--MainGreen);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: fit-content;
+      gap: 0px;
+      font-size: 1em;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    
+    .footerLogo{
+        height: 200px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    
+      .footerNav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0px;
+        height: 100%;
+      }
+      
+      .footerNavList{
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2px;
+        height: 100%;
+        padding-top: 40px;
+        color: white;
+      }
+    
+      .footerNavList>li>a{
+        color: white;
+      }
+    
+      .footerNavList>li{
+    
+        transition: all 50ms ease-in-out;
+      }
+    
+      .footerNavList>li:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+      }
+    
+    
+      
+    
+      .footerBold{
+        font-size: 1.1em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  }

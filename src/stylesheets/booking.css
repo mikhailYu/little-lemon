@@ -1,0 +1,195 @@
+.bookingPage{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* hero section */
+
+#heroSectionBooking{
+    width: 100%;
+    background-color: var(--MainGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 300px;
+    min-height: 300px;
+}
+
+
+.heroImgContBooking{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    transform: translateY(30px);
+}
+
+.heroImgContBooking>img{
+    width: 900px;
+    transform: translateY(-200px) translateX(-230px);
+}
+
+/* form */
+
+#bookingFormCont{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#bookingFormCont>label{
+    font-weight: bold;
+    color: black;
+    font-size:2em;
+    font-family: Markazi;
+}
+
+#formDate{
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#formTime{
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#formGuests{
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+#formOccasion{
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.formErr{
+    color: red;
+    font-size: 0.9em;
+}
+
+.bookingSubmitButton{
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 900px){
+    .bookingPage{
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    /* hero section */
+    
+    #heroSectionBooking{
+        width: 100%;
+        background-color: var(--MainGreen);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+        height: 300px;
+        padding-top: 20px;
+    }
+    
+    
+    .heroImgContBooking{
+        height: 200px;
+        width: 200px;
+        overflow: hidden;
+        border-radius: 20px;
+        transform: translateY(50px);
+    }
+    
+    .heroImgContBooking>img{
+        width: 700px;
+        transform: translateY(-150px) translateX(-230px);
+    }
+    
+    /* form */
+    
+    #bookingFormCont{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    
+    }
+    
+    #bookingFormCont>label{
+        font-weight: bold;
+        color: black;
+        font-size:2em;
+        font-family: Markazi;
+    }
+    
+    #formDate{
+        border: 1px solid black;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    #formTime{
+        border: 1px solid black;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    #formGuests{
+        border: 1px solid black;
+        padding: 5px 5px 5px 5px;
+        border-radius: 10px;
+    
+        text-align: center;
+    }
+    
+    #formOccasion{
+        border: 1px solid black;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .formErr{
+        color: red;
+        font-size: 0.9em;
+    }
+    
+    .bookingSubmitButton{
+        margin-top: 20px;
+    }
+}

@@ -45,6 +45,7 @@ export default function HomePage(props) {
             traditional recipes served with a modern twist.
           </p>
           <button
+            aria-label="On Click"
             type="button"
             className="heroButton yellowButton"
             onClick={() => {
